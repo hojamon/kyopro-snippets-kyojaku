@@ -133,7 +133,6 @@
   },
   "Geometry 2D": {
     "prefix": ["geom2d", "geom"],
-    "description": "2D geometry: eps, equal, Vector",
     "body": [
       "// Vector",
       "const double eps=1e-9;",
@@ -169,11 +168,11 @@
       "istream&operator>>(istream&is,V&v){is>>v.x>>v.y;return is;}",
       "ostream&operator<<(ostream&os,const V&v){os<<\"(\"<<v.x<<\",\"<<v.y<<\")\";return os;}",
       "$0"
-    ]
+    ],
+    "description": "2D geometry: eps, equal, Vector"
   },
   "combination mod prime": {
     "prefix": ["comb", "modcomb"],
-    "description": "modinv / modfact / modfactinv / comb",
     "body": [
       "//combination mod prime",
       "struct modinv{",
@@ -208,11 +207,11 @@
       "  return facts(n)*ifacts(k)*ifacts(n-k);",
       "}",
       "$0"
-    ]
+    ],
+    "description": "modinv / modfact / modfactinv / comb"
   },
   "dfs": {
     "prefix": "dfs",
-    "description": "隣接リスト + 再帰DFS",
     "body": [
       "bool visited[${1:1001001}];",
       "vector<vector<int>>g(${1:1001001});",
@@ -224,7 +223,8 @@
       "  }",
       "}",
       "$0"
-    ]
+    ],
+    "description": "隣接リスト + 再帰DFS"
   },
   "Sieve": {
     "prefix": "prime",
